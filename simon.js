@@ -10,7 +10,7 @@
       const keyboard = document.getElementById('keyboard')
 
       function startGame (levelNumber) {
-        responsiveVoice.setDefaultVoice("Spanish Latin American Female");
+        // responsiveVoice.setDefaultVoice("Spanish Latin American Female");
         levelbox.className = 'levelbox'
         keyboard.classList.add('active')
         switch (levelNumber) {
@@ -153,7 +153,7 @@
         }else if(opts.fail){
           el.classList.add('fail')
         }
-        responsiveVoice.speak(`${String.fromCharCode(keyCode).toLowerCase()}`);
+        // responsiveVoice.speak(`${String.fromCharCode(keyCode).toLowerCase()}`);
         setTimeout(()=>deactivate(el),500)
       }
 
